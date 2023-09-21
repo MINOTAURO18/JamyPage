@@ -4,15 +4,14 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="home">
   <section class="home px-8% text-white gap-4">
-    <h1 class="text-6xl max-w-2xl font-semibold">
-      Estilo para cada aventura, encuentra tu inspiración en cada prenda.
+    <h1 class="slogan text-6xl font-semibold">
+      Encuentra tu <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600">inspiración</span> en cada prenda.
     </h1>
-    <p class="max-w-2xl">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit est hic
-      incidunt nobis omnis. Lorem ipsum, dolor sit amet consectetur
+    <p class="max-w-2xl text-center parrafo">
+      Tu tienda de moda preferida. Descubre las últimas tendencias y diseños únicos en nuestra boutique de ropa.
     </p>
 
-    <div class="flex gap-4">
+    <div class="flex gap-6 mt-3">
       <a class="button" href=""> <span>Products</span></a>
       <a class="button" href=""> <span>Contact</span></a>
     </div>
@@ -23,8 +22,8 @@ import Layout from "../layouts/Layout.astro";
   .home {
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
       ),
       url(/images/bg.webp);
     width: 100%;
@@ -34,6 +33,80 @@ import Layout from "../layouts/Layout.astro";
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+
+  .slogan{
+    max-width: 850px;
+    text-align: center;
+  }
+  
+
+  .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button {
+    --color: #ffffff;
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 400;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button::before,
+  .button::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background: linear-gradient(10deg, blue, green) ;
+    transition: 1s ease;
+  }
+
+  .button::before {
+    top: -1em;
+    left: -1em;
+  }
+
+  .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+  }
+
+  .button:hover::before,
+  .button:hover::after {
+    height: 410px;
+    width: 410px;
+  }
+
+  .button:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .button:active {
+    filter: brightness(0.8);
   }
 
   
