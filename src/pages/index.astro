@@ -5,16 +5,26 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="home">
   <section class="home px-8% text-white gap-4">
     <h1 class="slogan text-6xl font-semibold">
-      Encuentra tu <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600">inspiración</span> en cada prenda.
+      Encuentra tu <span
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
+        >inspiración</span
+      > en cada prenda.
     </h1>
     <p class="max-w-2xl text-center parrafo">
-      Tu tienda de moda preferida. Descubre las últimas tendencias y diseños únicos en nuestra boutique de ropa.
+      Tu tienda de moda preferida. Descubre las últimas tendencias y diseños
+      únicos en nuestra boutique de ropa.
     </p>
 
     <div class="flex gap-6 mt-3">
       <a class="button" href=""> <span>Products</span></a>
       <a class="button" href=""> <span>Contact</span></a>
     </div>
+  </section>
+
+  <section class="section-two relative">
+    <span class="item"></span>
+
+    <h2>The Compañy</h2>
   </section>
 </Layout>
 
@@ -36,11 +46,38 @@ import Layout from "../layouts/Layout.astro";
     align-items: center;
   }
 
-  .slogan{
+  .section-two {
+    width: 100%;
+    min-height: 70vh;
+    position: relative;
+  }
+  span.item {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 7rem;
+    height: 8rem;
+    transform: rotate(90deg) skewX(-12deg);
+    border-radius: 1.5rem;
+    background-color: #008697;
+    filter: blur(1.3rem);
+    opacity: 0.8;
+    display: none;
+    z-index:-1 ;
+  }
+
+  @media (width > 400px) {
+    span.item {
+      right: 100px; 
+      opacity: 0.8; 
+      display: block; 
+    }
+  }
+
+  .slogan {
     max-width: 850px;
     text-align: center;
   }
-  
 
   .items {
     display: flex;
@@ -81,7 +118,7 @@ import Layout from "../layouts/Layout.astro";
     position: absolute;
     border-radius: 50%;
     z-index: -1;
-    background: linear-gradient(10deg, blue, green) ;
+    background: linear-gradient(10deg, blue, green);
     transition: 1s ease;
   }
 
@@ -108,6 +145,4 @@ import Layout from "../layouts/Layout.astro";
   .button:active {
     filter: brightness(0.8);
   }
-
-  
 </style>
