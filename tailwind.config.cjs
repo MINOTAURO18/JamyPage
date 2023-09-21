@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       height: {
         "8vh": "8vh",
+		"92vh": "92vh"
       },
       padding: {
         "8%": "8%",

@@ -2,8 +2,19 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<h1 class="">hello</h1>
+<Layout title="home">
+	<section class="home w-full h-92vh">
+		
+	</section>
 </Layout>
 
+<style>
+	.home{
+		background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/bg.webp);
+		width: 100%;
+		min-height: 92vh;
+		background-position:center;
+		background-size: cover;
+	}
+</style>
 
