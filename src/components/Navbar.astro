@@ -1,18 +1,13 @@
----
-import DarkMode from "./DarkMode.astro";
----
-
 <header
   class="header w-full py-3 px-8% z-20 " 
 >
   <span class="flex items-center justify-start font-bold text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 text-xl">JAMYPAGE</span>
-  <nav class="flex justify-center items-center gap-10 nav">
-    <a href="#"><span  style="color: #1700FF;">H</span>ome</a>
-    <a href="#"><span  style="color: #1700FF;">P</span>roducts</a>
-    <a href="#"><span  style="color: #1700FF;">A</span>bout</a>
+  <nav class="flex justify-center items-center gap-10 nav text-white">
+    <a href="/"><span  style="color: #1700FF;">H</span>ome</a>
+    <a href="/products"><span  style="color: #1700FF;">P</span>roducts</a>
+    <a href="/about"><span  style="color: #1700FF;">A</span>bout</a>
   </nav>
   <div class=" h-full flex justify-end items-center gap-2">
-    <DarkMode/>
       <a href="#"><img class="w-6" src="/images/github.svg" alt="" /></a>
       <a href="#"><img class="w-6" src="/images/linkedin.svg" alt="" /></a>
       <a href="#"><img class="w-6" src="/images/youtube.svg" alt="" /></a>

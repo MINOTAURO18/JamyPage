@@ -1,5 +1,6 @@
 ---
 import Navbar from "../components/Navbar.astro";
+import { ViewTransitions } from "astro:transitions";
 interface Props {
   title: string;
 }
@@ -16,6 +17,7 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+	<ViewTransitions/>
   </head>
   <body>
     <Navbar />
@@ -38,16 +40,8 @@ const { title } = Astro.props;
       "Open Sans",
       "Helvetica Neue",
       sans-serif;
-    font-family: system-ui, sans-serif;
-	transition: all .2s ease-in-out ;
+    background-color: rgb(0,0 ,0);
 
   }
-
-  html.dark {
-	transition: all .2s ease-in-out ;
-    background-color: rgb(4, 9, 24);
-    color: rgb(255, 255, 255);
-  }
-
-
+  
 </style>
