@@ -50,7 +50,8 @@ import Layout from "../layouts/Layout.astro";
 
     <article class="art2 w-full text-white text-lg flex justify-between items-center flex-wrap">
       <img class="w-96" src="/images/mision.svg" alt="">
-      <span class="4"></span>
+      <span class="item4"></span>
+      <span class="item5"></span>
       <span class="max-w-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, obcaecati vitae? Distinctio nisi cumque, perspiciatis vero dolorem enim sunt neque commodi facilis veritatis assumenda numquam asperiores, exercitationem quia ipsa adipisci! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ea, ipsum provident enim libero inventore rerum eligendi quos. Debitis ratione molestias esse voluptates accusantium sequi consequuntur vitae, modi ducimus unde!</span>
     </article>
   </section>
@@ -129,6 +130,77 @@ import Layout from "../layouts/Layout.astro";
       display: block; 
     }
   }
+
+  span.item3 {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 15rem;
+    height: 10rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background:linear-gradient(30deg, blue, violet);
+    filter: blur(1.5rem);
+    opacity: 0.8;
+    display: none;
+    z-index:-1 ;
+  }
+
+  @media (width > 400px) {
+    span.item3 {
+      right: 100px; 
+      opacity: 0.8; 
+      display: block; 
+    }
+  }
+
+
+  span.item4{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 9rem;
+    height: 7rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background:#008697;
+    filter: blur(1.5rem);
+    opacity: 0.8;
+    display: none;
+    z-index:-1 ;
+  }
+
+  @media (width > 400px) {
+    span.item4 {
+      right: 100px; 
+      opacity: 0.8; 
+      display: block; 
+    }
+  }
+
+  span.item5{
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 9rem;
+    height: 7rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background:#770053;
+    filter: blur(1.5rem);
+    opacity: 0.8;
+    display: none;
+    z-index:-1 ;
+  }
+
+  @media (width > 400px) {
+    span.item5 {
+      right: 100px; 
+      opacity: 0.8; 
+      display: block; 
+    }
+  }
+
 
   .slogan {
     max-width: 850px;
