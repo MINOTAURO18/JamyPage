@@ -31,10 +31,27 @@ import Layout from "../layouts/Layout.astro";
       </span>
     </article>
 
-    <article class="w-full text-white text-lg flex justify-between items-center">
+    <article class="art2 w-full text-white text-lg flex justify-between items-center flex-wrap">
       <span class="item2"></span>
       <span class="max-w-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, obcaecati vitae? Distinctio nisi cumque, perspiciatis vero dolorem enim sunt neque commodi facilis veritatis assumenda numquam asperiores, exercitationem quia ipsa adipisci! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ea, ipsum provident enim libero inventore rerum eligendi quos. Debitis ratione molestias esse voluptates accusantium sequi consequuntur vitae, modi ducimus unde!</span>
       <img class="w-96" src="/images/Service.svg" alt="">
+    </article>
+  </section>
+
+  <section class="section-three relative px-8% py-10 flex flex-col gap-8">
+    <span class="item3"></span>
+
+    <article>
+      <span class="flex gap-1 ">
+        <h1 class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600">Our Commitment and Purpose</h1>
+        <img class="w-6" src="/images/arrow.svg" alt="">
+      </span>
+    </article>
+
+    <article class="art2 w-full text-white text-lg flex justify-between items-center flex-wrap">
+      <img class="w-96" src="/images/mision.svg" alt="">
+      <span class="4"></span>
+      <span class="max-w-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, obcaecati vitae? Distinctio nisi cumque, perspiciatis vero dolorem enim sunt neque commodi facilis veritatis assumenda numquam asperiores, exercitationem quia ipsa adipisci! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ea, ipsum provident enim libero inventore rerum eligendi quos. Debitis ratione molestias esse voluptates accusantium sequi consequuntur vitae, modi ducimus unde!</span>
     </article>
   </section>
 </Layout>
@@ -61,6 +78,11 @@ import Layout from "../layouts/Layout.astro";
     width: 100%;
     min-height: 70vh;
  
+  }
+
+  .section-three{
+    width: 100%;
+    min-height: 85vh;
   }
   span.item {
     position: absolute;
@@ -180,5 +202,12 @@ import Layout from "../layouts/Layout.astro";
     filter: brightness(0.8);
   }
 
+
+  @media (width < 1092px) {
+    .section-two .art2{
+      justify-content: center;
+      gap: 30px;
+    }
+  }
   
 </style>
