@@ -19,7 +19,7 @@ const { title } = Astro.props;
     <title>{title}</title>
 	<ViewTransitions/>
   </head>
-  <body>
+  <body transition:animate="slide">
     <Navbar />
     <slot />
   </body>

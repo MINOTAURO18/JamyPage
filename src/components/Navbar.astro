@@ -1,38 +1,124 @@
 <header
-  class="header w-full py-3 px-8% z-20 " 
+  transition:animate="none"
+  class="sticky top-0 header w-full py-3 px-8% z-20"
 >
-  <span class="flex items-center justify-start font-bold text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 text-xl">JAMYPAGE</span>
+  <span
+    class="flex items-center justify-start font-bold text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 text-xl"
+    >JAMYPAGE</span
+  >
   <nav class="flex justify-center items-center gap-10 nav text-white">
-    <a href="/"><span  style="color: #1700FF;">H</span>ome</a>
-    <a href="/products"><span  style="color: #1700FF;">P</span>roducts</a>
-    <a href="/about"><span  style="color: #1700FF;">A</span>bout</a>
+    <a href="/"
+      ><span
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
+        >H</span
+      >ome</a
+    >
+    <a href="/products"
+      ><span
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
+        >P</span
+      >roducts</a
+    >
+    <a href="/about"
+      ><span
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
+        >A</span
+      >bout</a
+    >
   </nav>
-  <div class=" h-full flex justify-end items-center gap-2">
-      <a href="#"><img class="w-6" src="/images/github.svg" alt="" /></a>
-      <a href="#"><img class="w-6" src="/images/linkedin.svg" alt="" /></a>
-      <a href="#"><img class="w-6" src="/images/youtube.svg" alt="" /></a>
+  <div class="h-full flex justify-end items-center gap-2">
+    <a href="#"><img class="w-6" src="/images/github.svg" alt="" /></a>
+    <a href="#"><img class="w-6" src="/images/linkedin.svg" alt="" /></a>
+    <a href="#"><img class="w-6" src="/images/youtube.svg" alt="" /></a>
   </div>
+
+  <span class="item"></span>
+  <span class="item2"></span>
+  <span class="item3"></span>
 </header>
 
 <script>
-  const Button = document.getElementById('btn');
- 
- Button.addEventListener('click', () => {
-     document.body.classList.toggle('dark'); 
-     Button.classList.toggle('active');
- });
+  const Button = document.getElementById("btn");
+
+  Button.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    Button.classList.toggle("active");
+  });
 </script>
 <style>
-  .header{
+  .header {
+    background-color: rgb(0, 0, 0);
     display: grid;
     grid-template-columns: 25% 50% 25%;
-
+    opacity: 0.96;
   }
 
-  .nav{
-    font-weight: 500;
+  .nav {
+    font-weight: 600;
     letter-spacing: 1px;
   }
 
+  span.item {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 65px;
+    height: 30px;
+    /* transform: rotate(90deg) skewX(-12deg); */
+    border-radius: 1.5rem;
+    background-color: #008697;
+    filter: blur(1.1rem);
+    opacity: 0.8;
+    display: none;
+  }
 
+  @media (width > 400px) {
+    span.item {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+
+  span.item2 {
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    width: 85px;
+    height: 25px;
+    border-radius: 1rem;
+    background: linear-gradient(35deg, blue, violet);
+    filter: blur(1.1rem);
+    opacity: 0.8;
+    display: none;
+  }
+
+  @media (width > 400px) {
+    span.item2 {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+
+  span.item3 {
+    position: absolute;
+    top: 5px;
+    left: 58%;
+    width: 130px;
+    height: 25px;
+    border-radius: 1rem;
+    background: linear-gradient(35deg, rgb(0, 255, 170), rgb(0, 24, 240));
+    filter: blur(1.1rem);
+    opacity: 0.8;
+    display: none;
+  }
+
+  @media (width > 400px) {
+    span.item3 {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
 </style>
