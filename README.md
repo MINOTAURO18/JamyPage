@@ -12,6 +12,7 @@ npm create astro@latest -- --template basics
 
 
 <img src='./public/images/porta.png'>
+<img src='./public/images/principal.png'>
 
 ## 🚀 Project Structure
 
@@ -31,11 +32,14 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Jamy Page is a meticulously designed website that embodies modern web development excellence. Crafted using Astro and Tailwind, it adheres to best practices, delivering a visually appealing, high-performance experience.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Comprising three key sections:
 
-Any static assets, like images, can be placed in the `public/` directory.
+Home: A welcoming, user-friendly interface sets the stage for an engaging visit.
+Products: Showcasing a diverse range of products with responsive, mobile-friendly design.
+About Us: Providing insights into the creators and their mission.
+In summary, Jamy Page excels in design, performance, and user experience, thanks to its use of Astro and Tailwind along with industry best practices.
 
 ## 🧞 Commands
 
