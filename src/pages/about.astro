@@ -27,7 +27,7 @@ import Footer from "../components/Footer.astro";
                 <h1 class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold">our history</h1>
                 <img class="w-6" src="/images/arrow.svg" alt="">
               </span>
-              <div class="flex justify-between items-center flex-wrap">
+              <div class="history flex justify-between items-center flex-wrap gap-5">
                 <p class="max-w-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ex illo odio dolorum veritatis, iste, ea quod laudantium doloremque iusto quo. Fugit asperiores deserunt excepturi in commodi debitis velit possimus.
                 Excepturi, sint laborum. Fugiat ducimus voluptatum rerum dignissimos modi autem, inventore beatae in velit. Sunt ipsum sed officia sit, soluta molestiae eos libero expedita architecto, error cumque! Repudiandae, beatae consequatur.
                 Possimus magnam eius asperiores culpa temporibus? Explicabo, ab sit laboriosam repudiandae, perferendis nulla dignissimos ducimus accusamus, eos dicta repellendus atque cum commodi ipsam? Culpa placeat saepe, doloremque expedita eveniet fugit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat odit consectetur tempore eum aliquid, ea saepe et culpa modi voluptatem eveniet itaque nesciunt laboriosam eaque. Vero possimus expedita numquam deleniti!</p>
@@ -117,6 +117,12 @@ import Footer from "../components/Footer.astro";
         right: 100px; 
         opacity: 0.8; 
         display: block; 
+      }
+    }
+
+    @media (width < 1200px) {
+      .history{
+        justify-content: center;
       }
     }
 </style>
