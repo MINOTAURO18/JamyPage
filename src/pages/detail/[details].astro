@@ -1,0 +1,18 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return [
+    {params: {detail: 'clifford'}},
+    {params: {detail: 'rover'}},
+    {params: {detail: 'spot'}},
+  ];
+}
+
+const { detail } = Astro.params;
+---
+
+<Layout title='products'>
+  <section>
+  </section>
+</Layout>
