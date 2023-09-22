@@ -1,10 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Cards from "../components/Cards.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Products">
-    <section class="text-white px-8% py-4">
-        <Cards/>
-    </section> 
+  <section class="text-white py-7 flex flex-col gap-10">
+    <article class="px-8% flex flex-col gap-3">
+      <span class="flex gap-1 justify-center items-center">
+        <h1
+          class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+        take a look at our products
+        </h1>
+        <img class="w-6" src="/images/arrow.svg" alt="" />
+      </span>
+      <p class="max-w-4xl text-center m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat consequatur aperiam, quidem laudantium temporibus incidunt. Provident veniam quidem, iste quas veritatis corrupti voluptates? Inventore quae repellendus non qui veniam!</p>
+    </article>
+    <Cards />
+    <Footer />
+  </section>
 </Layout>
