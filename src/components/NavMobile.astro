@@ -15,6 +15,9 @@
       >
     </span>
   </nav>
+  <span class="item"></span>
+  <span class="item2"></span>
+  <span class="item3"></span>
 </header>
 
 <style>
@@ -40,6 +43,70 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+  }
+
+  span.item {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 65px;
+    height: 30px;
+    /* transform: rotate(90deg) skewX(-12deg); */
+    border-radius: 1.5rem;
+    background-color: #008697;
+    filter: blur(1.1rem);
+    opacity: 0.8;
+    display: none;
+  }
+
+  @media (width > 400px) {
+    span.item {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+
+  span.item2 {
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    width: 85px;
+    height: 25px;
+    border-radius: 1rem;
+    background: linear-gradient(35deg, blue, violet);
+    filter: blur(1.1rem);
+    opacity: 0.8;
+    display: none;
+  }
+
+  @media (width > 400px) {
+    span.item2 {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+
+  span.item3 {
+    position: absolute;
+    top: 5px;
+    left: 58%;
+    width: 130px;
+    height: 25px;
+    border-radius: 1rem;
+    background: linear-gradient(35deg, rgb(0, 255, 170), rgb(0, 24, 240));
+    filter: blur(1.1rem);
+    opacity: 0.8;
+    display: none;
+  }
+
+  @media (width > 400px) {
+    span.item3 {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
     }
   }
 </style>
