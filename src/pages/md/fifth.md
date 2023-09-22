@@ -12,3 +12,10 @@ layout: '../../layouts/Layout.astro'
    <button class='w-20 h-7 border-gray-50 border-2 rounded-md flex justify-center items-center hover:bg-blue-900 transition'>Buy</button>
    </div>
 </section>
+
+<style>
+   section{
+      width:100%;
+      min-height: calc(100vh - 52px)
+   }
+</style>

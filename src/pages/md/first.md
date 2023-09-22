@@ -13,3 +13,9 @@ layout: '../../layouts/Layout.astro'
    </div>
 </section>
 
+<style>
+   section{
+      width:100%;
+      min-height: calc(100vh - 52px)
+   }
+</style>
