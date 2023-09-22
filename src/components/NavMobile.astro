@@ -1,13 +1,45 @@
 <header class="mobile">
-    <nav>
-        <a href="#"><img src="/images/home.svg" alt=""></a>
-        <a href="#"><img src="/images/projects.svg" alt=""></a>
-        <a href="#"><img src="/images/about.svg" alt=""></a>
-    </nav>
+  <nav class="nav-mobile">
+    <a href="/"><img class="w-6" src="/images/home.svg" alt="" /></a>
+    <a href="/products"><img class="w-6" src="/images/projects.svg" alt="" /></a
+    >
+    <a href="/about"><img class="w-6" src="/images/about.svg" alt="" /></a>
+    <span class="h-full flex justify-end items-center gap-4 z-10">
+      <a target="_blank" href="https://github.com/MINOTAURO18"
+        ><img class="w-6" src="/images/github.svg" alt="" /></a
+      >
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/alexander-mu%C3%B1oz-4959a0255/"
+        ><img class="w-6" src="/images/linkedin.svg" alt="" /></a
+      >
+    </span>
+  </nav>
 </header>
 
 <style>
-    .mobile{
-        display: none;
+  .mobile {
+    display: none;
+  }
+
+  @media (width < 650px) {
+    .mobile {
+      position: absolute;
+      position: fixed;
+      top: 92vh;
+      background-color: rgb(0, 0, 0);
+      width: 100%;
+      height: 8vh;
+      display: flex;
+      z-index: 20;
     }
+    .nav-mobile {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 </style>
