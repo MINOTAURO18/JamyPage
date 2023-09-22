@@ -1,39 +1,46 @@
-<footer class="footer w-full text-white px-8%">
-  <article>
-    <span>
+
+  <footer class="footer w-full text-white px-8% py-5">
+    <article class="flex gap-5 justify-between flex-wrap">
+    <span class="flex flex-col gap-3">
       <h3>JAMYPAGE</h3>
-      <p>
+      <p class="max-w-sm">
         Feel free to give it another try, your persistence and determination
         will lead you to success.
       </p>
     </span>
-    <div>
-       <h3>Company</h3>
-       <span>Home</span>
-       <span>Privacy Policy</span>
-       <span>About us</span>
+    <div class="flex flex-col gap-3">
+      <h3>Company</h3>
+      <span>Home</span>
+      <span>Privacy Policy</span>
+      <span>About us</span>
     </div>
 
-    <div>
-        <h3>Services</h3>
-        <span>market</span>
-        <span>purchase</span>
-        <span>change</span>
-     </div>
+    <div class="flex flex-col gap-3">
+      <h3>Services</h3>
+      <span>market</span>
+      <span>purchase</span>
+      <span>change</span>
+    </div>
 
-     <span>
-        <h3>Contact</h3>
-        <a href="#"><img class="w-6" src="/images/linkedin.svg" alt=""></a>
-        <a href="#"><img class="w-6" src="/images/github.svg" alt=""></a>
-     </span>
+    <span>
+      <h3>Contact</h3>
+      <div class="flex">
+        <a href="#"><img class="w-6" src="/images/linkedin.svg" alt="" /></a>
+        <a href="#"><img class="w-6" src="/images/github.svg" alt="" /></a>
+      </div>
+    </span>
   </article>
   <article>
-    
+    <span>&copy; <span id="year"></span> JAMY</span>
+    <a href="#">Made By JAMY</a>
   </article>
 </footer>
 
 <style>
-  .footer{
-    min-height: 50vh ;
+  .footer {
+    min-height: 50vh;
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 </style>
