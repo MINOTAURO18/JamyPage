@@ -1,7 +1,7 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import { ViewTransitions } from "astro:transitions";
-import { slide } from "astro:transitions";
+import { fade } from "astro:transitions";
 interface Props {
   title: string;
 }
@@ -10,7 +10,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -20,7 +20,7 @@ const { title } = Astro.props;
     <title>{title}</title>
 	<ViewTransitions/>
   </head>
-  <body transition:animate={slide({ duration: '0.4s' })}>
+  <body transition:animate={fade({ duration: '0.3s' })}>
     <Navbar />
     <slot />
   </body>
