@@ -33,7 +33,7 @@ import Footer from "../components/Footer.astro";
           modi voluptatem eveniet itaque nesciunt laboriosam eaque. Vero
           possimus expedita numquam deleniti!
         </p>
-        <div class="flex gap-32 flex-wrap">
+        <div class="support flex gap-52 flex-wrap justify-center" >
           <div class="flex justify-center items-center flex-col gap-10">
             <span class="flex gap-1 items-center">
               <h1
@@ -84,6 +84,10 @@ import Footer from "../components/Footer.astro";
         amazing what can be done with Astro. Follow me on my social media
         accounts.
       </p>
+      <span class="flex gap-5 justify-center items-center">
+        <a target="_blank" class="button" href="https://www.youtube.com/@JAMY_1/featured"> <span>YouTube</span></a>
+        <a target="_blank" class="button" href="https://www.instagram.com/jamy_10011/"> <span>Instagram</span></a>
+      </span>
     </article>
     <span class="item"></span>
     <span class="item2"></span>
@@ -162,9 +166,76 @@ import Footer from "../components/Footer.astro";
     }
   }
 
+  .button {
+    --color: #ffffff;
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 400;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button::before,
+  .button::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background: linear-gradient(10deg, blue, green);
+    transition: 1s ease;
+  }
+
+  .button::before {
+    top: -1em;
+    left: -1em;
+  }
+
+  .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+  }
+
+  .button:hover::before,
+  .button:hover::after {
+    height: 410px;
+    width: 410px;
+  }
+
+  .button:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .button:active {
+    filter: brightness(0.8);
+  }
+
   @media (width < 1200px) {
     .history {
       justify-content: center;
+    }
+
+    @media (width < 946px) {
+      .support{
+         gap: 100px;
+      }
     }
   }
 </style>
