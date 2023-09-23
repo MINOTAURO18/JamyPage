@@ -32,17 +32,20 @@ import Footer from "../components/Footer.astro";
         </h1>
         <img class="w-6" src="/images/arrow.svg" alt="" />
       </span>
-      <div class="flex justify-between items-center">
-        <p class="max-w-xl">
+      <div class="flex justify-between items-center flex-wrap gap-5">
+        <p class="max-w-lg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit est
           quod non sunt molestiae ad culpa excepturi voluptate, voluptatum autem
           provident soluta, ipsam quae odio mollitia et? Deserunt,
           necessitatibus voluptate. Lorem ipsum dolor sit amet, consectetur
           adipisicing elit.
         </p>
-        <img class="w-36" src="/images/marke.svg" alt="">
-        <img class="w-36" src="/images/marke2.svg" alt="">
-        <img class="w-36" src="/images/seo.svg" alt="">
+        <div class="flex gap-12 ">
+
+          <img class=" hover:animate-jump w-36" src="/images/marke.svg" alt="">
+          <img class=" hover:animate-jump w-32" src="/images/marke2.svg" alt="">
+          <img class=" hover:animate-jump w-32" src="/images/seo.svg" alt="">
+        </div>
       </div>
     </article>
     <Footer />
