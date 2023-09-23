@@ -11,90 +11,103 @@ import Footer from "../components/Footer.astro";
         <h1
           class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
         >
-        take a look at our products
+          take a look at our products
         </h1>
         <img class="w-6" src="/images/arrow.svg" alt="" />
       </span>
-      <p class="max-w-4xl text-center m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat consequatur aperiam, quidem laudantium temporibus incidunt. Provident veniam quidem, iste quas veritatis corrupti voluptates? Inventore quae repellendus non qui veniam!</p>
+      <p class="max-w-4xl text-center m-auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+        placeat consequatur aperiam, quidem laudantium temporibus incidunt.
+        Provident veniam quidem, iste quas veritatis corrupti voluptates?
+        Inventore quae repellendus non qui veniam!
+      </p>
     </article>
     <Cards />
+    <article class="px-8% flex flex-col gap-5" >
+      <span class="flex gap-1  items-center">
+        <h1
+          class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+        high quality products
+        </h1>
+        <img class="w-6" src="/images/arrow.svg" alt="" />
+      </span>
+      <p class="max-w-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit est quod non sunt molestiae ad culpa excepturi voluptate, voluptatum autem provident soluta, ipsam quae odio mollitia et? Deserunt, necessitatibus voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </article>
     <Footer />
     <span class="item"></span>
     <span class="item2"></span>
     <span class="item3"></span>
-
   </section>
 </Layout>
 
 <style>
-        span.item {
-      position: absolute;
-      top: 40px;
-      right: 0;
-      width: 7rem;
-      height: 8rem;
-      transform: rotate(90deg) skewX(-12deg);
-      border-radius: 1.5rem;
-      background-color: #008697;
-      filter: blur(1.3rem);
+  span.item {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 7rem;
+    height: 8rem;
+    transform: rotate(90deg) skewX(-12deg);
+    border-radius: 1.5rem;
+    background-color: #008697;
+    filter: blur(1.3rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
+
+  @media (width > 300px) {
+    span.item {
+      right: 100px;
       opacity: 0.8;
-      display: none;
-      z-index:-1 ;
+      display: block;
     }
+  }
 
-    @media (width > 300px) {
-      span.item {
-        right: 100px; 
-        opacity: 0.8; 
-        display: block; 
-      }
-    }
+  span.item2 {
+    position: absolute;
+    top: 85%;
+    left: 55%;
+    width: 15rem;
+    height: 10rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background: linear-gradient(30deg, rgb(81, 95, 1), rgb(9, 39, 119));
+    filter: blur(1.5rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
 
+  @media (width > 700px) {
     span.item2 {
-      position: absolute;
-      top: 85%;
-      left: 55%;
-      width: 15rem;
-      height: 10rem;
-      transform: rotate(60deg) skewX(-12deg);
-      border-radius: 6rem;
-      background:linear-gradient(30deg, rgb(81, 95, 1), rgb(9, 39, 119));
-      filter: blur(1.5rem);
+      right: 100px;
       opacity: 0.8;
-      display: none;
-      z-index:-1 ;
+      display: block;
     }
+  }
 
-    @media (width > 700px) {
-      span.item2 {
-        right: 100px; 
-        opacity: 0.8; 
-        display: block; 
-      }
-    }
+  span.item3 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 15rem;
+    height: 10rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background: linear-gradient(30deg, blue, violet);
+    filter: blur(1.5rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
 
+  @media (width > 300px) {
     span.item3 {
-      position: absolute;
-      top: 100px;
-      left: 0;
-      width: 15rem;
-      height: 10rem;
-      transform: rotate(60deg) skewX(-12deg);
-      border-radius: 6rem;
-      background:linear-gradient(30deg, blue, violet);
-      filter: blur(1.5rem);
+      right: 100px;
       opacity: 0.8;
-      display: none;
-      z-index:-1 ;
+      display: block;
     }
-
-    @media (width > 300px) {
-      span.item3 {
-        right: 100px; 
-        opacity: 0.8; 
-        display: block; 
-      }
-    }
-
-   
+  }
 </style>
