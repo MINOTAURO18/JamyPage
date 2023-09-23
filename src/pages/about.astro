@@ -4,125 +4,167 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="About">
-    <section class="px-8% py-24 flex flex-col gap-40 text-white">
-      
-      <article class="flex flex-col gap-7">
-          <span class="flex gap-1 justify-center items-center">
-              <h1 class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold">Companies that support us</h1>
-              <img class="w-6" src="/images/arrow.svg" alt="">
+  <section class="px-8% py-10 flex flex-col gap-24 text-white">
+    <article class="flex flex-col gap-5">
+      <span class="flex gap-1 justify-center items-center">
+        <h1
+          class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+          Nice To Meet You
+        </h1>
+        <img class="w-6" src="/images/arrow.svg" alt="" />
+      </span>
+      <div
+        class="history flex flex-col justify-between items-center flex-wrap gap-20"
+      >
+        <p class="text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ex
+          illo odio dolorum veritatis, iste, ea quod laudantium doloremque iusto
+          quo. Fugit asperiores deserunt excepturi in commodi debitis velit
+          possimus. Excepturi, sint laborum. Fugiat ducimus voluptatum rerum
+          dignissimos modi autem, inventore beatae in velit. Sunt ipsum sed
+          officia sit, soluta molestiae eos libero expedita architecto, error
+          cumque! Repudiandae, beatae consequatur. Possimus magnam eius
+          asperiores culpa temporibus? Explicabo, ab sit laboriosam repudiandae,
+          perferendis nulla dignissimos ducimus accusamus, eos dicta repellendus
+          atque cum commodi ipsam? Culpa placeat saepe, doloremque expedita
+          eveniet fugit? Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Fugiat odit consectetur tempore eum aliquid, ea saepe et culpa
+          modi voluptatem eveniet itaque nesciunt laboriosam eaque. Vero
+          possimus expedita numquam deleniti!
+        </p>
+        <div class="flex gap-32 flex-wrap">
+          <div class="flex justify-center items-center flex-col gap-10">
+            <span class="flex gap-1 items-center">
+              <h1
+                class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+              >
+                Companies that support us
+              </h1>
             </span>
-            <div class="flex justify-center items-center gap-10 flex-wrap">
-              <img class="w-14" src="/images/amazon.svg" alt="">
-              <img class="w-14" src="/images/apple.svg" alt="">
-              <img class="w-14" src="/images/android.svg" alt="">
-              <img class="w-14" src="/images/bankin.svg" alt="">
-              <img class="w-14" src="/images/brave.svg" alt="">
-              <img class="w-14" src="/images/facebook.svg" alt="">
-              <img class="w-14" src="/images/dropbox.svg" alt="">
-              <img class="w-14" src="/images/samsung.svg" alt="">
+            <div
+              class="flex justify-between items-center gap-10 flex-wrap max-w-sm"
+            >
+              <img class="w-12" src="/images/amazon.svg" alt="" />
+              <img class="w-12" src="/images/apple.svg" alt="" />
+              <img class="w-12" src="/images/android.svg" alt="" />
+              <img class="w-12" src="/images/bankin.svg" alt="" />
+              <img class="w-12" src="/images/brave.svg" alt="" />
+              <img class="w-12" src="/images/facebook.svg" alt="" />
+              <img class="w-12" src="/images/dropbox.svg" alt="" />
+              <img class="w-12" src="/images/samsung.svg" alt="" />
             </div>
-      </article>
-        <article class="flex flex-col gap-3">
-            <span class="flex gap-1  items-center">
-                <h1 class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold">Nice To Meet You</h1>
-                <img class="w-6" src="/images/arrow.svg" alt="">
-              </span>
-              <div class="history flex justify-between items-center flex-wrap gap-5">
-                <p class="max-w-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ex illo odio dolorum veritatis, iste, ea quod laudantium doloremque iusto quo. Fugit asperiores deserunt excepturi in commodi debitis velit possimus.
-                Excepturi, sint laborum. Fugiat ducimus voluptatum rerum dignissimos modi autem, inventore beatae in velit. Sunt ipsum sed officia sit, soluta molestiae eos libero expedita architecto, error cumque! Repudiandae, beatae consequatur.
-                Possimus magnam eius asperiores culpa temporibus? Explicabo, ab sit laboriosam repudiandae, perferendis nulla dignissimos ducimus accusamus, eos dicta repellendus atque cum commodi ipsam? Culpa placeat saepe, doloremque expedita eveniet fugit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat odit consectetur tempore eum aliquid, ea saepe et culpa modi voluptatem eveniet itaque nesciunt laboriosam eaque. Vero possimus expedita numquam deleniti!</p>
-                <img class="hover:animate-jump w-96" src="/images/history.svg" alt="">
-              </div>
-        </article>
+          </div>
+          <img
+            class="hover:animate-jump w-80"
+            src="/images/history.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </article>
 
-        <article class="flex flex-col gap-8">
-            <span class="flex gap-1 justify-center items-center">
-                <h1 class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold">Hello There!</h1>
-                <img class="w-6" src="/images/arrow.svg" alt="">
-              </span>
-              <img class="hover:animate-jump w-60 rounded-full m-auto" src="/images/alex.webp" alt="">
-              <p class="max-w-3xl text-center m-auto">Hello, I hope you are doing well. My name is John Alexander Muñoz Yepez - JAMY, and this is one of my first contributions to the community. It's amazing what can be done with Astro. Follow me on my social media accounts.</p>
-        </article>
-        <span class="item"></span>
-        <span class="item2"></span>
-        <span class="item3"></span> 
-    </section>
-    <Footer/>
+    <article class="flex flex-col gap-8">
+      <span class="flex gap-1 justify-center items-center">
+        <h1
+          class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+          Hello There!
+        </h1>
+        <img class="w-6" src="/images/arrow.svg" alt="" />
+      </span>
+      <img
+        class="hover:animate-jump w-60 rounded-full m-auto"
+        src="/images/alex.webp"
+        alt=""
+      />
+      <p class="max-w-3xl text-center m-auto">
+        Hello, I hope you are doing well. My name is John Alexander Muñoz Yepez
+        - JAMY, and this is one of my first contributions to the community. It's
+        amazing what can be done with Astro. Follow me on my social media
+        accounts.
+      </p>
+    </article>
+    <span class="item"></span>
+    <span class="item2"></span>
+    <span class="item3"></span>
+  </section>
+  <Footer />
 </Layout>
 
 <style>
-     span.item {
-      position: absolute;
-      top: 40px;
-      right: 0;
-      width: 7rem;
-      height: 8rem;
-      transform: rotate(90deg) skewX(-12deg);
-      border-radius: 1.5rem;
-      background-color: #008697;
-      filter: blur(1.3rem);
+  span.item {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 7rem;
+    height: 8rem;
+    transform: rotate(90deg) skewX(-12deg);
+    border-radius: 1.5rem;
+    background-color: #008697;
+    filter: blur(1.3rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
+
+  @media (width > 300px) {
+    span.item {
+      right: 100px;
       opacity: 0.8;
-      display: none;
-      z-index:-1 ;
+      display: block;
     }
+  }
 
-    @media (width > 300px) {
-      span.item {
-        right: 100px; 
-        opacity: 0.8; 
-        display: block; 
-      }
-    }
+  span.item2 {
+    position: absolute;
+    top: 95%;
+    left: 55%;
+    width: 15rem;
+    height: 10rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background: linear-gradient(30deg, rgb(171, 201, 4), rgb(163, 11, 233));
+    filter: blur(1.5rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
 
+  @media (width > 600px) {
     span.item2 {
-      position: absolute;
-      top: 95%;
-      left: 55%;
-      width: 15rem;
-      height: 10rem;
-      transform: rotate(60deg) skewX(-12deg);
-      border-radius: 6rem;
-      background:linear-gradient(30deg, rgb(171, 201, 4), rgb(163, 11, 233));
-      filter: blur(1.5rem);
+      right: 100px;
       opacity: 0.8;
-      display: none;
-      z-index:-1 ;
-    } 
-
-    @media (width > 600px) {
-      span.item2 {
-        right: 100px; 
-        opacity: 0.8; 
-        display: block; 
-      }
+      display: block;
     }
+  }
 
+  span.item3 {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 11rem;
+    height: 8rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background: linear-gradient(30deg, blue, violet);
+    filter: blur(1.5rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
+
+  @media (width > 300px) {
     span.item3 {
-      position: absolute;
-      top: 120px;
-      left: 0;
-      width: 11rem;
-      height: 8rem;
-      transform: rotate(60deg) skewX(-12deg);
-      border-radius: 6rem;
-      background:linear-gradient(30deg, blue, violet);
-      filter: blur(1.5rem);
+      right: 100px;
       opacity: 0.8;
-      display: none;
-      z-index:-1 ;
+      display: block;
     }
+  }
 
-    @media (width > 300px) {
-      span.item3 {
-        right: 100px; 
-        opacity: 0.8; 
-        display: block; 
-      }
+  @media (width < 1200px) {
+    .history {
+      justify-content: center;
     }
-
-    @media (width < 1200px) {
-      .history{
-        justify-content: center;
-      }
-    }
+  }
 </style>
